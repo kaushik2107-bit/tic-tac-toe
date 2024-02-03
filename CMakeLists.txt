@@ -11,11 +11,6 @@ file(GLOB_RECURSE SRCS src/*.c src/*.cpp src/*.h)
 # ---- Name of executable ----
 set(EXEC "ttt")
 
-# ---- Append "exe" to the name
-if(WIN32)
-    set(EXEC "${EXEC}.exe")
-endif()
-
 # ---- Define the executable target ----
 add_executable(${EXEC} ${SRCS})
 
