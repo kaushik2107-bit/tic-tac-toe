@@ -39,7 +39,7 @@ int negamax(SearchData& sd, int alpha, int beta, int depth) {
         if (score > best_score) {
             best_score = score;
 
-            if (alpha > best_score) {
+            if (alpha < best_score) {
                 alpha = best_score;
             }
 
